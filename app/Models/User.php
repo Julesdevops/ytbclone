@@ -69,4 +69,9 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\Models\Channel', 'user_subscribed_channel');
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Models\Comment');
+    }
 }
