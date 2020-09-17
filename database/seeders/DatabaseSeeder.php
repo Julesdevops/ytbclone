@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use App\Models\Comment;
+use App\Models\Video;
+use App\Models\Channel;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +17,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // User::factory(10)->create();
+        $channel = Channel::factory()->create([
+            'user_id' => User::factory()
+        ]);
+        
+        Video::factory()
+                ->times(15)
+                ->create([
+                    'channel_id' => $channel
+                ]);
     }
 }

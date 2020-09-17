@@ -23,7 +23,7 @@ class CreateVideoTable extends Migration
             $table->string('title')->index();
             $table->string('video_filepath');
             $table->string('thumbnail_filepath');
-            $table->date('release_date');
+            $table->dateTime('release_datetime');
             $table->text('description')->nullable();
             $table->foreign('channel_id')->references('id')->on('channel');
             $table->timestamps();
