@@ -6,9 +6,10 @@ use Illuminate\Http\Request;
 
 class ChannelRetrieveController extends Controller
 {
-    public function getUserSubscriptions(int $userId)
+    public function getUserSubscriptions()
     {
         // TODO
+        //* Retrieve the id of current user
     }
 
     public function getChannelOverview(int $channelId)
