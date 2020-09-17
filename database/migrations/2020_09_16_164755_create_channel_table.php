@@ -18,6 +18,7 @@ class CreateChannelTable extends Migration
             $table->unsignedBigInteger('subscribers');
             $table->unsignedBigInteger('user_id')->unique();
             $table->unsignedBigInteger('views');
+            $table->string('name')->unique();
             $table->text('description')->nullable();
             $table->string('email')->nullable()->unique();
             $table->foreign('user_id')->references('id')->on('user');
