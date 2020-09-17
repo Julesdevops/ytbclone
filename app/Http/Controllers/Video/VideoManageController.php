@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Video;
 
 use Illuminate\Http\Request;
 
-class ManageController extends Controller
+class VideoManageController extends Controller
 {
     public function upload(Request $request)
     {

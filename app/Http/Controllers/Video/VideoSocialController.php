@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Video;
 
 use Illuminate\Http\Request;
 
-class SocialController extends Controller
+class VideoSocialController extends Controller
 {
     public function like(int $videoId)
     {

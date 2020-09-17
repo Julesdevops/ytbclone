@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Comment;
 
 use Illuminate\Http\Request;
 
-class SocialController extends Controller
+class CommentSocialController extends Controller
 {
     public function answer(int $commentId)
     {

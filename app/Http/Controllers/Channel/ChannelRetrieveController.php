@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Channel;
 
 use Illuminate\Http\Request;
 
-class RetrieveController extends Controller
+class ChannelRetrieveController extends Controller
 {
     public function getUserSubscriptions(int $userId)
     {

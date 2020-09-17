@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Video;
 
 use Illuminate\Http\Request;
 
-class RetrieveController extends Controller
+class VideoRetrieveController extends Controller
 {
     public function getVideoOverviews()
     {

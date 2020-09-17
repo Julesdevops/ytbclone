@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Channel;
 
 use Illuminate\Http\Request;
 
-class SocialController extends Controller
+class ChannelSocialController extends Controller
 {
     public function subscribeUser(int $channelId)
     {

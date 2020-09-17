@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Channel;
 
 use Illuminate\Http\Request;
 
-class ManageController extends Controller
+class ChannelManageController extends Controller
 {
     public function create(Request $request)
     {

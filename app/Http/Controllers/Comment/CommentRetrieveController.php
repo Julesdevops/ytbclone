@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Comment;
 
 use Illuminate\Http\Request;
 
-class RetrieveController extends Controller
+class CommentRetrieveController extends Controller
 {
     public function getVideoComments(int $videoId, int $offset)
     {
