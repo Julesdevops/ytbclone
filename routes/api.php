@@ -2,6 +2,11 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\Video\{VideoManageController, VideoRetrieveController, VideoSocialController};
+use App\Http\Controllers\Comment\{CommentManageController, CommentRetrieveController, CommentSocialController};
+use App\Http\Controllers\Channel\{ChannelManageController, ChannelRetrieveController, ChannelSocialController};
 
 /*
 |--------------------------------------------------------------------------
