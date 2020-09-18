@@ -19,7 +19,7 @@ class VideoOverview extends JsonResource
             'views' => $this->views,
             'thumbnail_filepath' => $this->thumbnail_filepath,
             'title' => $this->title,
-            'released' => $this->release_datetime,
+            'released' => $this->ago,
             'channel' => new ChannelOverview($this->channel)
         ];
     }

@@ -25,7 +25,7 @@ class Video extends JsonResource
             'title' => $this->title,
             'video_filepath' => $this->video_filepath,
             'thumbnail_filepath' => $this->thumbnail_filepath,
-            'release_datetime' => $this->release_datetime,
+            'released' => $this->ago,
             'description' => $this->description,
             'channel' => new ChannelOverview($this->channel),
         ];

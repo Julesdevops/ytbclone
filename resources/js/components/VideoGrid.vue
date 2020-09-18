@@ -33,9 +33,11 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: #101010;
+  padding: 30px 90px 0 90px;
 }
 #video-overview-grid {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 </style>

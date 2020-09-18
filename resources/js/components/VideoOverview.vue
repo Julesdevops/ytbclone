@@ -12,32 +12,38 @@ export default {
     return {};
   },
   props: ["video"],
-  created() {
-    console.log(this.video);
-  },
   methods: {},
 };
 </script>
 
 <style lang="scss" scoped>
 #video-card {
-  width: 380px;
+  width: 360px;
   max-height: 330px;
+  cursor: pointer;
 }
 #thumbnail-image {
-  width: 380px;
+  width: 360px;
 }
 #video-title {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 #channel-name {
   color: grey;
-  font-size: 1rem;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: white;
+  }
 }
+
 #video-metadata {
   color: grey;
-  font-size: 1rem;
+  font-size: 0.9rem;
+}
+#video-card {
+  margin: 0 10px 80px 10px;
 }
 </style>

@@ -39,7 +39,7 @@ class VideoFactory extends Factory
             'release_datetime' => $this->faker->dateTimeThisDecade(),
             'channel_id' => Channel::factory(),
             'video_filepath' => "/storage/videos/$i.mp4",
-            'thumbnail_filepath' => "/storage/thumbnails/$i.webp"
+            'thumbnail_filepath' => "/storage/thumbnails/$i.jpg"
         ];
     }
 
