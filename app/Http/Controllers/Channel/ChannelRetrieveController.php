@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\Channel;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\ChannelOverview;
+use App\Models\Channel;
 
 class ChannelRetrieveController extends Controller
 {
@@ -14,6 +17,8 @@ class ChannelRetrieveController extends Controller
 
     public function getChannelOverview(int $channelId)
     {
-        // TODO
+        return new ChannelOverview(
+            Channel::findOrFail($channelId)
+        );
     }
 }
