@@ -1,17 +1,21 @@
 <template>
+  <div>
     <Header />
+    <VideoGrid />
+  </div>
 </template>
 
 <script>
-import Header from './Header.vue'
+import Header from "./Header.vue";
+import VideoGrid from "./VideoGrid.vue";
 export default {
-    components: {
-        Header
-    }
-}
+  components: {
+    Header,
+    VideoGrid,
+  },
+};
 </script>
 
 <style style="scss">
-@import '../../sass/_variables.scss';
-@import '../../sass/base.scss';
+@import "../../sass/base.scss";
 </style>
