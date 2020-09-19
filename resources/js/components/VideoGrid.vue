@@ -32,8 +32,10 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  background-color: #101010;
+  background-color: #181818;
   padding: 30px 90px 0 90px;
+  grid-area: main;
+  margin: 62px 0 0 200px;
 }
 #video-overview-grid {
   display: flex;

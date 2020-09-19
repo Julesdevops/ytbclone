@@ -1,0 +1,32 @@
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.sidebar-item {
+    cursor: pointer;
+    padding: 10px 10px 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item:hover {
+    background-color: #434343;
+}
+
+.sidebar-item-label {
+    margin: 0 0 0 30px;
+}
+
+.sidebar-title {
+    font-size: 1.1rem;
+    padding: 10px 10px 10px 30px;
+}

@@ -96,13 +96,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/_variables.scss";
 header {
+  grid-area: head;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: $dark;
-  padding: 20px;
+  background-color: #202020;
+  padding: 16px;
+  height: 30px;
+  position: fixed;
+  width: 100%;
 }
 
 .header-button {
@@ -112,18 +115,18 @@ header {
   font: inherit;
   outline: inherit;
   color: inherit;
-  margin: 0 0 0 20px;
+  margin: 0 20px 0 0;
 }
 
 #ytb-logo {
-  width: 100px;
-  height: auto;
-  margin: 0 0 0 20px;
+  width: 80px;
+  height: 24;
+  margin: 0 0 0 0;
 }
 
 #search-bar {
   display: flex;
-  height: 1.9rem;
+  height: 32px;
 }
 
 #search-bar-input {

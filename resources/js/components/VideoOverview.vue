@@ -31,7 +31,7 @@ export default {
 }
 
 #channel-name {
-  color: grey;
+  color: #aaaaaa;
   font-size: 0.9rem;
 
   &:hover {
@@ -40,7 +40,7 @@ export default {
 }
 
 #video-metadata {
-  color: grey;
+  color: #aaaaaa;
   font-size: 0.9rem;
 }
 #video-card {
