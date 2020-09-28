@@ -6,20 +6,28 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import App from './components/App'
+import VideoView from './components/VideoView'
+import VideoGrid from './components/VideoGrid'
 
 const router = new VueRouter({
     mode: 'history',
-    routes: [
-        {
+    routes: [{
             path: '/',
             name: 'home',
-            component: App
+            component: VideoGrid
+        },
+        {
+            path: '/video/:id',
+            name: 'video',
+            component: VideoView
         }
     ]
 })
 
 const app = new Vue({
     el: "#app",
-    components: { App },
+    components: {
+        App
+    },
     router
 })

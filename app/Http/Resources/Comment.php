@@ -20,7 +20,7 @@ class Comment extends JsonResource
             'likes' => $this->likes,
             'dislikes' => $this->dislikes,
             'answers' => $this->answers,
-            'created_at' => $this->created_at,
+            'created' => $this->ago,
             'updated_at' => $this->updated_at,
             'user' => new UserOverview($this->user),
         ];

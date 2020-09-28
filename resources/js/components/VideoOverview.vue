@@ -1,8 +1,8 @@
 <template>
-  <div id="video-card">
+  <div id="video-card" @click="onVideoClicked">
     <img :src="video.thumbnail_filepath" alt="Video thumbnail" id="thumbnail-image" />
     <div id="video-title">{{ video.title }}</div>
-    <div id="channel-name">{{ video.channel.name }}</div>
+    <div id="channel-name" @click.stop="onChannelClicked">{{ video.channel.name }}</div>
     <div id="video-metadata">{{ video.views }} views - {{ video.released }} ago</div>
   </div>
 </template>
@@ -12,7 +12,15 @@ export default {
     return {};
   },
   props: ["video"],
-  methods: {},
+  methods: {
+    onVideoClicked() {
+      const videoId = this.video.id;
+      this.$router.push({ name: "video", params: { id: videoId } });
+    },
+    onChannelClicked() {
+      console.log("chaine cliquée");
+    },
+  },
 };
 </script>
 

@@ -33,9 +33,9 @@ export default {
 <style lang="scss" scoped>
 main {
   background-color: #181818;
-  padding: 30px 90px 0 90px;
+  padding: 30px 80px 0 80px;
   grid-area: main;
-  margin: 62px 0 0 200px;
+  margin: 62px 0 0 242px;
 }
 #video-overview-grid {
   display: flex;

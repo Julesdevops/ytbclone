@@ -28,7 +28,8 @@ class CommentFactory extends Factory
             'content' => $this->faker->text(1000),
             'likes' => rand(0, 1000),
             'dislikes' => rand(0, 1000),
-            'answers' => rand(0, 100)
+            'answers' => rand(0, 100),
+            'user_id' => User::factory()
         ];
     }
 }

@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         
         Video::factory()
                 ->times(15)
+                ->has(Comment::factory()->count(50))
                 ->create([
                     'channel_id' => $channel
                 ]);

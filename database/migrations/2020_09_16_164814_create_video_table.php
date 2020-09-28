@@ -18,7 +18,7 @@ class CreateVideoTable extends Migration
             $table->unsignedBigInteger('views');
             $table->unsignedBigInteger('likes');
             $table->unsignedBigInteger('dislikes');
-            $table->unsignedBigInteger('comments');
+            $table->unsignedBigInteger('comment_number');
             $table->unsignedBigInteger('channel_id');
             $table->string('title')->index();
             $table->string('video_filepath');

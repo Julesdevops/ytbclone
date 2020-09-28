@@ -33,11 +33,10 @@ class VideoFactory extends Factory
             'views' => rand(0, 10000),
             'likes' => rand(0, 10000),
             'dislikes' => rand(0, 10000),
-            'comments' => rand(0, 1000),
+            'comment_number' => rand(0, 1000),
             'title' => $this->faker->sentence(),
             'description' => $this->faker->text(1000),
             'release_datetime' => $this->faker->dateTimeThisDecade(),
-            'channel_id' => Channel::factory(),
             'video_filepath' => "/storage/videos/$i.mp4",
             'thumbnail_filepath' => "/storage/thumbnails/$i.jpg"
         ];

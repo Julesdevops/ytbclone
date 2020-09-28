@@ -16,7 +16,7 @@ class Video extends Model
         'views' => 0,
         'likes' => 0,
         'dislikes' => 0,
-        'comments' => 0
+        'comment_number' => 0
     ];
 
     public function comments()
@@ -49,5 +49,12 @@ class Video extends Model
         $dateService = resolve(DateService::class);
 
         return $dateService->ago($this->release_datetime);
+    }
+
+    public function getReleaseDateAttribute()
+    {
+        $dateService = resolve(DateService::class);
+
+        return $dateService->humanReadable($this->release_datetime);
     }
 }

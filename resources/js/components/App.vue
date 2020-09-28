@@ -2,7 +2,7 @@
   <section id="container">
     <Header />
     <Sidebar />
-    <VideoGrid />
+    <router-view></router-view>
   </section>
 </template>
 

@@ -24,6 +24,13 @@ class DateService
         return $this->getMostRelevantDiff($diffs);
     }
 
+    public function humanReadable(string $datetime): string
+    {
+        $date = new Carbon($datetime);
+
+        return $date->isoFormat('D MMM Y');
+    }
+
     private function getMostRelevantDiff(array $diffs): string
     {
         //* Removes array indexes that are equals to zero
